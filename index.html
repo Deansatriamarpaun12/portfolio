@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio Dean Satria Marpaung - IT Support, Networking, Fiber Optic, FTTH, GIS dan Web Development.">
+<title>Dean Satria Marpaung | IT Support • Networking • Data & GIS</title>
+<style>
+:root{--navy:#071a33;--navy2:#0c2748;--cyan:#20d9e6;--blue:#246bfe;--text:#172033;--muted:#667085;--bg:#f6f8fb;--white:#fff;--line:#e6eaf0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,26,51,.96);backdrop-filter:blur(10px);color:#fff}
+.navin{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.04em}.navlinks{display:flex;gap:24px;font-size:14px}.navlinks a{opacity:.9}.navlinks a:hover{color:var(--cyan)}
+.hero{background:linear-gradient(135deg,var(--navy),#10355d 65%,#0b203c);color:#fff;padding:88px 0 96px}
+.hero-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:56px;align-items:center}.eyebrow,.kicker{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan)}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;margin:16px 0}.accent{color:var(--cyan)}.hero h2{font-size:22px;margin:0 0 16px;font-weight:600}.hero p{max-width:680px;color:#c9d6e8;font-size:17px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:9px;font-weight:700;border:1px solid #6d819d}.btn.primary{background:#fff;color:var(--navy);border-color:#fff}.btn:hover{transform:translateY(-1px)}
+.profile{width:min(290px,100%);aspect-ratio:4/5;object-fit:cover;border-radius:22px;border:5px solid rgba(255,255,255,.16);box-shadow:0 25px 60px rgba(0,0,0,.3);justify-self:end}
+section{padding:80px 0}.section-head{margin-bottom:30px}.section-head h2{font-size:34px;margin:8px 0}.section-head p{color:var(--muted);max-width:760px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:0 8px 30px rgba(16,24,40,.04)}.card h3{margin:0 0 8px;font-size:20px}.card p{margin:0;color:#566074}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.stat{background:var(--navy);color:#fff;border-radius:14px;padding:20px}.stat b{font-size:27px;color:var(--cyan);display:block}.stat span{font-size:13px;color:#c9d6e8}
+.timeline{display:grid;gap:18px}.role{border-left:3px solid var(--cyan);padding:4px 0 4px 22px}.role .date{font-size:13px;color:var(--blue);font-weight:800}.role h3{margin:4px 0}.role p{color:var(--muted);margin:0 0 8px}.role ul{margin:8px 0 0;padding-left:20px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tag{background:#eef4ff;color:#1c55bd;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:700}
+.feature{background:linear-gradient(135deg,#071a33,#123d67);color:#fff;border-radius:20px;padding:34px}.feature p{color:#cbd8e8}.feature .tag{background:rgba(255,255,255,.1);color:#fff}.feature-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.projectlinks{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.projectlinks .btn{border-color:#66809e;color:#fff}.projectlinks .btn.primary{color:var(--navy)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.shot{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}.shot img{width:100%;height:250px;object-fit:cover;display:block}.shot figcaption{padding:12px 14px;font-size:13px;color:#5d6676}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skill h3{margin-bottom:8px}.skill p{color:var(--muted);margin:0}
+.credential{min-height:170px}.credential .issuer{color:var(--blue);font-weight:700;font-size:14px}
+.pub{display:flex;justify-content:space-between;gap:20px;align-items:center}.pub small{color:var(--muted)}
+.contact{background:var(--navy);color:#fff}.contact .section-head p{color:#cbd8e8}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{border:1px solid #29496b;border-radius:14px;padding:20px}.contact-card span{display:block;color:#9fb3cc;font-size:12px;text-transform:uppercase;letter-spacing:.12em}.contact-card strong{display:block;margin-top:5px;word-break:break-word}
+footer{background:#051326;color:#9fb3cc;padding:24px 0;font-size:13px}.disclaimer{font-size:12px;color:#8491a5;margin-top:20px}
+@media(max-width:820px){.hero-grid,.feature-grid,.grid2,.contact-grid{grid-template-columns:1fr}.profile{justify-self:start;width:220px}.navlinks{display:none}.grid3,.gallery,.skills{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}.pub{display:block}}
+@media(max-width:520px){.grid3,.gallery,.skills{grid-template-columns:1fr}section{padding:60px 0}.hero{padding:65px 0 70px}}
+</style>
+</head>
+<body>
+<nav><div class="container navin">
+  <a class="brand" href="#top">DEAN SATRIA MARPAUNG</a>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<header id="top" class="hero"><div class="container hero-grid">
+  <div>
+    <div class="eyebrow">Portfolio • Sukabumi, Jawa Barat</div>
+    <h1>Dean Satria<br><span class="accent">Marpaung</span></h1>
+    <h2>IT Support | Networking | Data & GIS</h2>
+    <p>Lulusan S1 Teknik Informatika Universitas Nusa Putra dengan pengalaman praktis di IT Support, ICT Operation, jaringan komputer, fiber optic, FTTH, GIS, dan pengembangan Web-GIS.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">Lihat Project</a>
+      <a class="btn" href="assets/Dean_Satria_Marpaung_CV.pdf" target="_blank">Download CV</a>
+      <a class="btn" href="#contact">Hubungi Saya</a>
+    </div>
+  </div>
+  <img class="profile" src="assets/profile.jpg" alt="Foto profil Dean Satria Marpaung">
+</div></header>
+
+<section id="about"><div class="container">
+  <div class="section-head"><div class="kicker">Profile</div><h2>About Me</h2></div>
+  <div class="grid2">
+    <div class="card">
+      <p>Saya adalah lulusan S1 Teknik Informatika Universitas Nusa Putra dengan IPK 3,66/4,00 dan latar belakang Teknik Komputer dan Jaringan. Pengalaman internship saya mencakup dukungan teknis pengguna, troubleshooting komputer dan jaringan, ICT Operation, serta pekerjaan jaringan fiber optic dan FTTH.</p>
+      <p style="margin-top:14px">Saya juga memiliki pengalaman mengembangkan Web-GIS untuk pemetaan ODP dan jalur fiber optic, mengelola data pelanggan dan gangguan, serta melakukan pengujian sistem. Selain kompetensi teknis, saya terbiasa bekerja dalam tim, berkomunikasi dengan user, mendokumentasikan pekerjaan, dan beradaptasi dengan kebutuhan operasional.</p>
+    </div>
+    <div>
+      <div class="stats"><div class="stat"><b>3</b><span>Pengalaman internship</span></div><div class="stat"><b>3.66</b><span>IPK / 4.00</span></div><div class="stat"><b>C1</b><span>EnglishScore CEFR</span></div></div>
+      <div class="card" style="margin-top:12px"><h3>Target Karier</h3><p>IT Support, Network / ICT, Fiber Optic & FTTH, GIS, Data Administration, dan pekerjaan operasional yang relevan.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="experience" style="background:#fff"><div class="container">
+  <div class="section-head"><div class="kicker">Experience</div><h2>Professional Experience</h2></div>
+  <div class="timeline">
+    <div class="role"><div class="date">11 Jan – 11 Feb 2026</div><h3>Network Technician Intern • PT Sahal Network Solution</h3><p>Parungkuda / Cikidang, Sukabumi</p><ul><li>Survei dan penarikan jalur fiber optic, pemasangan ODP, splicing, router WiFi, pengujian koneksi, maintenance, dan penanganan gangguan pelanggan.</li><li>Mendukung pengecekan server dan perangkat jaringan pusat.</li><li>Mengembangkan Web-GIS untuk pemetaan ODP, jalur fiber optic, pelanggan, dan gangguan.</li></ul></div>
+    <div class="role"><div class="date">29 Sep – 29 Des 2025</div><h3>ICT Operation Intern • PT Indonesia Chemical Alumina</h3><p>Tayan Hilir, Kalimantan Barat</p><ul><li>Instalasi Windows dan aplikasi kerja serta troubleshooting komputer, printer, dan perangkat pendukung.</li><li>Penarikan dan perapian kabel LAN, pengecekan konektivitas internet, instalasi modem dan access point.</li><li>Pemeliharaan ruang server, pemeriksaan perangkat jaringan, dan pendampingan user.</li><li>Mempelajari pembuatan recovery Windows otomatis untuk efisiensi pemeliharaan perangkat.</li></ul></div>
+    <div class="role"><div class="date">17 Feb – 16 Sep 2025</div><h3>IT Support & Network Intern • PT ANTAM Tbk UBPB Kalimantan Barat</h3><p>Tayan Hilir, Kabupaten Sanggau, Kalimantan Barat</p><ul><li>Instalasi software, pemeliharaan komputer, pemulihan data, dan troubleshooting perangkat.</li><li>Mendukung konfigurasi jaringan Point to Point menggunakan Ubiquiti NanoStation.</li><li>Pengecekan sinyal dan konektivitas antar titik serta dukungan teknis kepada user.</li></ul></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="container">
+  <div class="section-head"><div class="kicker">Featured Project</div><h2>Web-GIS FTTH Fault Tracing</h2><p>Project utama yang menggabungkan networking, data, GIS, dan web development.</p></div>
+  <div class="feature"><div class="feature-grid"><div>
+    <h3 style="font-size:28px;margin-top:0">GIS-Based Mapping of ODP Locations and Fiber Optic Routes for FTTH Fault Tracing</h3>
+    <p>Web-GIS untuk menampilkan lokasi ODP dan jalur fiber optic serta mengintegrasikan data ODP, pelanggan, jaringan, dan laporan gangguan. Pengembangan menggunakan PHP, MySQL, Leaflet.js, Bootstrap, dan metode Waterfall, dengan functional dan usability testing.</p>
+    <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Leaflet.js</span><span class="tag">Bootstrap</span><span class="tag">Web-GIS</span><span class="tag">FTTH</span></div>
+    <div class="projectlinks"><a class="btn primary" href="https://peta.snsnet.id/login.php" target="_blank">Buka WebGIS</a><a class="btn" href="https://doi.org/10.32877/bt.v9i1.4075" target="_blank">Lihat Publikasi</a></div>
+  </div><div class="card" style="background:rgba(255,255,255,.08);border-color:#355577;color:#fff"><h3>Project Scope</h3><p style="color:#d3deeb">Pemetaan ODP • Jalur fiber optic • Data pelanggan • Laporan gangguan • Penelusuran gangguan berbasis data spasial • Functional testing • Usability evaluation</p><div class="stat" style="margin-top:14px"><b>WebGIS</b><span>Networking + GIS + Database</span></div></div></div></div>
+
+  <div class="grid3" style="margin-top:22px">
+    <div class="card"><h3>IT Support Case Study</h3><p>Instalasi software, troubleshooting PC/laptop, recovery data, user support, dan pemeliharaan perangkat TI.</p><div class="tags"><span class="tag">Windows</span><span class="tag">Hardware</span><span class="tag">Software</span></div></div>
+    <div class="card"><h3>ICT Operation</h3><p>Monitoring infrastruktur, jaringan LAN, access point, modem, server room, dan penanganan kendala teknis user.</p><div class="tags"><span class="tag">ICT</span><span class="tag">LAN</span><span class="tag">Server</span></div></div>
+    <div class="card"><h3>FTTH & Fiber Optic</h3><p>Survei jalur, penarikan kabel, ODP, splicing, router WiFi, pengujian koneksi, maintenance, dan troubleshooting pelanggan.</p><div class="tags"><span class="tag">FTTH</span><span class="tag">Fiber Optic</span><span class="tag">ODP</span></div></div>
+  </div>
+</div></section>
+
+<section style="background:#fff"><div class="container">
+  <div class="section-head"><div class="kicker">Field Documentation</div><h2>Selected Work Photos</h2><p>Dokumentasi dipilih dari laporan internship dan PKL yang kamu kirim. Foto digunakan sebagai bukti visual kegiatan teknis.</p></div>
+  <div class="gallery">
+      <figure class="shot">
+        <img src="assets/antam_26_1.jpg" alt="Instalasi aplikasi pada PC user" loading="lazy">
+        <figcaption>Instalasi aplikasi pada PC user</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/antam_26_2.jpg" alt="Pembongkaran hard disk laptop user" loading="lazy">
+        <figcaption>Pembongkaran hard disk laptop user</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/antam_27_1.jpg" alt="Pengecekan hard disk dan pemulihan data" loading="lazy">
+        <figcaption>Pengecekan hard disk dan pemulihan data</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/antam_27_2.jpg" alt="Pengaturan jaringan Point to Point" loading="lazy">
+        <figcaption>Pengaturan jaringan Point to Point</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/ica_32_1.jpg" alt="Pemasangan rak dan pembersihan mini server" loading="lazy">
+        <figcaption>Pemasangan rak dan pembersihan mini server</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/ica_32_2.jpg" alt="Penambahan RAM dan SSD serta recovery data" loading="lazy">
+        <figcaption>Penambahan RAM dan SSD serta recovery data</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/ica_33_1.jpg" alt="Kegiatan teknis ICT Operation" loading="lazy">
+        <figcaption>Kegiatan teknis ICT Operation</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/ica_33_2.jpg" alt="Kegiatan teknis ICT Operation" loading="lazy">
+        <figcaption>Kegiatan teknis ICT Operation</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/sahal_29_1.jpg" alt="Penarikan kabel fiber optik di lapangan" loading="lazy">
+        <figcaption>Penarikan kabel fiber optik di lapangan</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/sahal_30_1.jpg" alt="Pengecekan jalur fiber optik pada area pelanggan" loading="lazy">
+        <figcaption>Pengecekan jalur fiber optik pada area pelanggan</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/sahal_31_1.jpg" alt="Dokumentasi gudang peralatan fiber optik" loading="lazy">
+        <figcaption>Dokumentasi gudang peralatan fiber optik</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/sahal_32_1.jpg" alt="Dokumentasi kegiatan teknisi jaringan" loading="lazy">
+        <figcaption>Dokumentasi kegiatan teknisi jaringan</figcaption>
+      </figure>
+    
+      <figure class="shot">
+        <img src="assets/sahal_33_1.jpg" alt="Dokumentasi kegiatan teknisi jaringan" loading="lazy">
+        <figcaption>Dokumentasi kegiatan teknisi jaringan</figcaption>
+      </figure>
+    </div>
+</div></section>
+
+<section id="skills"><div class="container">
+  <div class="section-head"><div class="kicker">Capabilities</div><h2>Skills & Technologies</h2></div>
+  <div class="skills">
+    <div class="card skill"><h3>IT Support</h3><p>Computer & laptop troubleshooting, software installation, Windows, recovery data, Microsoft Office, technical support, user support.</p></div>
+    <div class="card skill"><h3>Networking</h3><p>MikroTik, LAN, network troubleshooting, network monitoring, basic network configuration, Point to Point networking.</p></div>
+    <div class="card skill"><h3>Fiber Optic & FTTH</h3><p>Fiber optic, FTTH, ODP, splicing, jalur distribusi, router WiFi, pengujian koneksi, maintenance.</p></div>
+    <div class="card skill"><h3>Web Development</h3><p>PHP, HTML, CSS, JavaScript, MySQL, Bootstrap, Visual Studio Code.</p></div>
+    <div class="card skill"><h3>GIS & Data</h3><p>GIS, Web-GIS, Leaflet.js, spatial mapping, ODP mapping, fiber optic route mapping, data pelanggan dan gangguan.</p></div>
+    <div class="card skill"><h3>Tools & Methods</h3><p>Linux/Kali Linux, WordPress, Canva, Microsoft Word/Excel/PowerPoint, Waterfall, functional testing, usability testing.</p></div>
+  </div>
+</div></section>
+
+<section id="credentials" style="background:#fff"><div class="container">
+  <div class="section-head"><div class="kicker">Credentials</div><h2>Certifications & Training</h2></div>
+  <div class="grid3">
+    <div class="card credential"><div class="issuer">MikroTik</div><h3>MTCNA</h3><p>MicroTik Certified Network Associate</p><small>18 July 2026 • Credential ID 2607NA9853</small></div>
+    <div class="card credential"><div class="issuer">British Council</div><h3>EnglishScore</h3><p>Core Skills Test • CEFR C1 Advanced</p><small>Score 518 • 25 June 2026</small></div>
+    <div class="card credential"><div class="issuer">Huawei ICT Academy</div><h3>HCIA-Cloud Service V3.5</h3><p>Certificate of Completion</p><small>19 August 2026</small></div>
+    <div class="card credential"><div class="issuer">Cisco Networking Academy</div><h3>Introduction to Cybersecurity</h3><p>Certificate of Completion</p><small>22 January 2024</small></div>
+    <div class="card credential"><div class="issuer">EPDC • Universitas Nusa Putra</div><h3>Public Speaking Training & Test</h3><p>Grade B</p><small>4 July 2026</small></div>
+    <div class="card credential"><div class="issuer">Education</div><h3>S1 Teknik Informatika</h3><p>Universitas Nusa Putra • IPK 3,66/4,00</p><small>2022–2026</small></div>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <div class="section-head"><div class="kicker">Publication</div><h2>Research & Publications</h2></div>
+  <div class="card pub"><div><h3>GIS-Based Mapping of ODP Locations and Fiber Optic Routes for FTTH Fault Tracing</h3><small>bit-Tech • Vol. 9 No. 1 • 2026 • Dean Satria Marpaung, Somantri, Hermanto</small></div><a class="btn" href="https://doi.org/10.32877/bt.v9i1.4075" target="_blank">Open DOI</a></div>
+  <div class="card pub" style="margin-top:14px"><div><h3>Peran IT Support dalam Pemeliharaan Infrastruktur Jaringan: Studi Kasus PT Antam UBPB Kalimantan Barat</h3><small>Bersama: Jurnal Pengabdian Masyarakat • Vol. 3 No. 1 • 2025 • Dean Satria Marpaung & Zaenal Alamsyah</small></div><a class="btn" href="https://doi.org/10.61994/bersama.v3i2.1101" target="_blank">Open DOI</a></div>
+</div></section>
+
+<section><div class="container">
+  <div class="section-head"><div class="kicker">Additional Experience</div><h2>Public Service & Field Experience</h2>
+  <p>Pengalaman non-teknis yang memperkuat kemampuan pendataan, ketelitian, pelayanan masyarakat, kerja lapangan, dan tanggung jawab operasional.</p></div>
+  <div class="grid3">
+    <div class="card"><div class="issuer">2024 • Pemilu</div><h3>Pantarlih</h3><p>Petugas Pemutakhiran Data Pemilih untuk kegiatan pendataan pemilih. Berkontribusi dalam pekerjaan lapangan yang membutuhkan ketelitian, komunikasi dengan masyarakat, dan pengelolaan data.</p></div>
+    <div class="card"><div class="issuer">2024 • Pemilu</div><h3>Petugas TPS</h3><p>Terlibat dalam pelaksanaan kegiatan di Tempat Pemungutan Suara, mendukung ketertiban proses dan pelayanan pemilih sesuai tugas yang diberikan.</p></div>
+    <div class="card"><div class="issuer">2022 • 3 bulan</div><h3>PKL • UPTD Dukcapil Cibadak</h3><p>Pengalaman praktik kerja lapangan di lingkungan pelayanan administrasi kependudukan. Detail tugas akan disesuaikan dengan kegiatan yang benar-benar kamu lakukan selama PKL.</p></div>
+  </div>
+</div></section>
+
+<section style="background:#fff"><div class="container">
+  <div class="section-head"><div class="kicker">Activities</div><h2>Organization & Committee</h2></div>
+  <div class="grid2">
+    <div class="card"><h3>MABIM • Tim IT</h3><p>Universitas Nusa Putra • September 2023. Membuat sertifikat kelulusan peserta MABIM, membantu pembuatan akun WordPress, dan mendukung kelancaran jaringan kegiatan.</p></div>
+    <div class="card"><h3>GANAS • Mentor Penerimaan Anggota Baru</h3><p>Februari 2024. Membimbing calon anggota, memberikan materi, serta membantu proses penilaian dan kelulusan.</p></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="container">
+  <div class="section-head"><div class="kicker">Contact</div><h2>Let’s Connect</h2><p>Terbuka untuk peluang kerja di bidang IT Support, networking, ICT, FTTH, GIS, data administration, dan peran operasional yang relevan.</p></div>
+  <div class="contact-grid">
+    <a class="contact-card" href="mailto:deansatria499@gmail.com"><span>Email</span><strong>deansatria499@gmail.com</strong></a>
+    <a class="contact-card" href="https://wa.me/6281380161662" target="_blank"><span>WhatsApp</span><strong>+62 813-8016-1662</strong></a>
+    <a class="contact-card" href="https://www.linkedin.com/in/dean-satria-marpaung-b41498404" target="_blank"><span>LinkedIn</span><strong>linkedin.com/in/dean-satria-marpaung-b41498404</strong></a>
+    <a class="contact-card" href="https://github.com/Deansatriamarpaun12/portfolio" target="_blank"><span>GitHub</span><strong>github.com/Deansatriamarpaun12/portfolio</strong></a>
+  </div>
+  <p class="disclaimer">Dokumentasi kegiatan pada halaman ini berasal dari laporan internship/PKL yang disusun oleh Dean Satria Marpaung. Sebelum dipublikasikan secara luas, pastikan penggunaan foto dan materi perusahaan sesuai dengan kebijakan perusahaan terkait kerahasiaan informasi.</p>
+</div></section>
+<footer><div class="container">© 2026 Dean Satria Marpaung • Portfolio</div></footer>
+</body>
+</html>
